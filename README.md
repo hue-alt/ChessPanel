@@ -1,0 +1,2 @@
+# ChessPanel
+Chess analyzer app
