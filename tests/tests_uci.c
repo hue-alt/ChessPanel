@@ -44,12 +44,12 @@ int main(void) {
     close(from_engine[1]);
 
     char buffer[BUFFER];
-    size_t readbytes;
+    size_t read_bytes;
     const char *cmd_uci = "uci\n";
     write(to_engine[1], cmd_uci, strlen(cmd_uci));
 
-    while ((readbytes = read(from_engine[0], buffer, BUFFER - 1)) > 0) {
-        buffer[readbytes] = '\0';
+    while ((read_bytes = read(from_engine[0], buffer, BUFFER - 1)) > 0) {
+        buffer[read_bytes] = '\0';
         printf("%s", buffer);
         if (strstr(buffer, "uciok") != NULL) {
             printf("\nuciok received, communication is working correctly.\n");
