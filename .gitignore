@@ -1,0 +1,20 @@
+#temporary files and CMake build directory
+cmake-build-*/
+.idea/
+
+#C/C++ object files, libraries, and executables
+*.o
+*.so
+*.a
+bin/
+tests/test_uci
+
+# database files
+*.db
+*.sqlite3
+
+# python
+__pycache__/
+*.py[cod]
+.venv/
+venv/

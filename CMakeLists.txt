@@ -3,4 +3,5 @@ project(ChessPanel C)
 
 set(CMAKE_C_STANDARD 23)
 
-add_executable(ChessPanel main.c)
+add_executable(ChessPanel
+        tests/tests_uci.c)
